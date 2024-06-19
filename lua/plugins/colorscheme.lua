@@ -1,13 +1,14 @@
+local colorscheme = require("lazyvim.plugins.colorscheme")
 return {
   {
-    "folke/tokyonight.nvim",
+    "sharpchen/Eva-Theme.nvim",
+    lazy = false,
+    priority = 1000,
+  },
+  {
+    "LazyVim/LazyVim",
     opts = {
-      style = "storm",
-      transparent = true,
-      styles = {
-        sidebars = "transparent",
-        floats = "transparent",
-      },
+      colorscheme = "Eva-Dark",
     },
   },
 }
